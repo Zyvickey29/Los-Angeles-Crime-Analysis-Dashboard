@@ -101,8 +101,8 @@ df.to_csv(csv_path, index=False)
 * **Weapon Usage:** Majority marked as "Not Applicable" — sign of non-violent 
 * **Crime vs Premises:** Streets and dwellings dominate as crime locations
 * **Crime vs Time:** Vehicle Theft and Battery – Simple Assault are predominantly reported in the afternoon hours (12 PM to 6 PM suggesting elevated risk in high-traffic periods.
-*                 : Theft of Identity shows bimodal spikes around 12 PM (noon) and 12 AM (midnight) -  possibly reflecting digital or financial frauds aligned with daily routines.
-*                 : Petty Theft incidents mostly occur between noon and evening, highlighting peak shoplifting or minor theft activities during business hours.
+* **                : Theft of Identity shows bimodal spikes around 12 PM (noon) and 12 AM (midnight) -  possibly reflecting digital or financial frauds aligned with daily routines.
+* **                : Petty Theft incidents mostly occur between noon and evening, highlighting peak shoplifting or minor theft activities during business hours.
 
 ### 6. **Donut Charts & Trends**
 
