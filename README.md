@@ -16,7 +16,7 @@ The dataset initially contained formatting issues, inconsistencies, and missing 
 
 ### ✅ Validated Columns
 
-* `**, **`\*\*, **`**, **`**, **`**, **`**, **`**, **`**, **`**, **`**, **`**, **`**, **`**, **`**, \*\*`**, **` — ensured no nulls present.
+* ensured no nulls present.
 
 ### 📅 Date and Time Cleaning
 
@@ -80,27 +80,29 @@ df.to_csv(csv_path, index=False)
 
 ### 2. **Temporal Analysis**
 
-* **Hourly Distribution:** Crimes peak between 12 PM and 6 PM
-* **Weekday Reporting:** Highest on Friday, lowest on Sunday
-* **Monthly Trend:** Noticeable drop during pandemic, seasonal surges in summer
+* **Hourly Distribution:** Crimes peak between 12 PM and 12 PM
+* **Weekday Reporting:** Highest on Monday, lowest on Sunday
+* **Monthly Trend:** Noticeable drop during pandemic, seasonal surges in summer, and showing count drops from 2024
 
 ### 3. **Geospatial Insights**
 
-* **Crime Cluster Zones:** Central LA, Hollywood, and South LA are hotspots
+* **Crime Cluster Zones:** Central LA, Pacific, 77th Street, and South LA are hotspots
 * **Area-wise Arrest Rate:** Highest in 77th Street and Central Areas
 
 ### 4. **Victim Demographics**
 
-* **Victim Age Distribution:** Majority fall between 18–30; `-1` indicates unknown age
-* **Victim Gender:** Males represent \~58.6%, Females \~39.8%, Others & Unknown \~1.6%
+* **Victim Age Distribution:** Majority fall between 18–35; `-1` indicates unknown age
+* **Victim Gender:** Males represent \~40.19%, Females \~35.68%, Others & Unknown \~24.42%
 * **Victim Descent:** Hispanic and White together make up nearly 50%
 
 ### 5. **Crime Characteristics**
 
 * **Top Crime Types:** Vehicle theft, Battery (Simple), and Burglary
-* **Weapon Usage:** Majority marked as "Not Applicable" — sign of non-violent or data gaps
+* **Weapon Usage:** Majority marked as "Not Applicable" — sign of non-violent 
 * **Crime vs Premises:** Streets and dwellings dominate as crime locations
-* **Crime vs Time:** Assault and battery dominate evenings
+* **Crime vs Time:** Vehicle Theft and Battery – Simple Assault are predominantly reported in the afternoon hours (12 PM to 6 PM suggesting elevated risk in high-traffic periods.
+*                 : Theft of Identity shows bimodal spikes around 12 PM (noon) and 12 AM (midnight) -  possibly reflecting digital or financial frauds aligned with daily routines.
+*                 : Petty Theft incidents mostly occur between noon and evening, highlighting peak shoplifting or minor theft activities during business hours.
 
 ### 6. **Donut Charts & Trends**
 
@@ -110,15 +112,8 @@ df.to_csv(csv_path, index=False)
 ### 7. **Outlier Dates**
 
 * **Highest Crime Days:** February 2, 2023 — 929 reports
-* **Lowest Crime Days:** December 31, 2024 — 38 reports
+* **Lowest Crime Days:** December 30, 2024 — 38 reports
 
----
-
-## 🧠 Insight Opportunities
-
-* **Missing values are features, not bugs:** Consider analyzing why weapon data is missing — perhaps in low-threat scenarios.
-* **Part II Crimes lead to fewer arrests:** Target intervention there.
-* **Temporal hotspots:** Strategies can be tailored to weekends, and 12 PM–6 PM windows.
 
 ---
 
